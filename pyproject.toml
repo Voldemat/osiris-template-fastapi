@@ -1,0 +1,15 @@
+[tool.black]
+line-length=79
+
+[tool.pytest.ini_options]
+asyncio_mode='auto'
+
+[tool.mypy]
+pretty = true
+strict = true
+plugins = 'pydantic.mypy'
+warn_unused_configs=true
+
+[[tool.mypy.overrides]]
+module="uvicorn"
+ignore_missing_imports=true

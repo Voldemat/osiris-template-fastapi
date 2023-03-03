@@ -1,0 +1,1 @@
+# osiris-template-fastapi
